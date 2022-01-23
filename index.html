@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Search Box</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="search-input">
+        <a href="" target="_blank" hidden></a>
+        <svg class="icon">
+          <use xlink:href="./images/search-solid.svg#search"></use>
+        </svg>
+        <input type="text" id="mysearch" placeholder="Type to search.." />
+        <div class="autocom-box">
+          <!-- here list are inserted from javascript -->
+        </div>
+        <svg
+          class="delete"
+          onclick="document.getElementById('mysearch').value = ''"
+        >
+          <use xlink:href="./images/times-solid.svg#delete"></use>
+        </svg>
+      </div>
+    </div>
+
+    <script src="js/suggestions.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

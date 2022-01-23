@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: whitesmoke;
+  padding: 0 1.25rem;
+  font-family: "Outfit", sans-serif;
+}
+
+::selection {
+  color: #fff;
+  background: #664aff;
+}
+
+.wrapper {
+  max-width: 34.375rem;
+  margin: 9.375rem auto;
+}
+
+.wrapper .search-input {
+  background: #fff;
+  width: 100%;
+  border-radius: 1.875rem 1.875rem 1.6rem 1.6rem;
+  position: relative;
+  box-shadow: 0 0.063rem 0.313rem 0.188rem rgba(0, 0, 0, 0.12);
+}
+
+.search-input input {
+  height: 3.125rem;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 4.375rem !important;
+  padding: 0 3.75rem 0 2.7rem;
+  font-size: 1rem;
+  box-shadow: 0 0.063rem 0.313rem rgba(0, 0, 0, 0.1);
+}
+
+.search-input.active input {
+  border-radius: 0.313rem 0.313rem 0 0;
+}
+
+.search-input .autocom-box {
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+  max-height: 17.5rem;
+  overflow-y: auto;
+}
+
+.search-input.active .autocom-box {
+  padding: 0.6rem 0.5rem;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.autocom-box li {
+  list-style: none;
+  padding: 0.5rem 0.8rem;
+  display: none;
+  width: 100%;
+  cursor: default;
+  border-radius: 0.19rem;
+}
+
+.search-input.active .autocom-box li {
+  display: block;
+}
+.autocom-box li:hover {
+  background: #efefef;
+}
+
+.search-input .icon {
+  position: absolute;
+  left: 1.3rem;
+  top: 1rem;
+  height: 1.1rem;
+  width: 1.1rem;
+  text-align: center;
+  line-height: 3.438rem;
+  font-size: 1.3rem;
+  fill: rgb(168, 168, 168);
+  cursor: pointer;
+}
+.search-input .delete {
+  position: absolute;
+  right: 1.3rem;
+  top: 1rem;
+  height: 1.1rem;
+  width: 1.1rem;
+  text-align: center;
+  line-height: 3.438rem;
+  font-size: 1.3rem;
+  fill: rgb(168, 168, 168);
+  cursor: pointer;
+}
