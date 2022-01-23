@@ -1,3 +1,13 @@
+:root {
+  --white: #fff;
+  --bg: whitesmoke;
+  --deepwhite: #d3d6d7;
+  --blue: rgb(36, 100, 179);
+  --grey: #efefef;
+  --deepgray: rgb(168, 168, 168);
+  --shadow-1: rgba(0, 0, 0, 0.12);
+  --shadow-2: rgba(0, 0, 0, 0.1);
+}
 * {
   margin: 0;
   padding: 0;
@@ -6,14 +16,14 @@
 }
 
 body {
-  background: whitesmoke;
+  background: var(--bg);
   padding: 0 1.25rem;
   font-family: "Outfit", sans-serif;
 }
 
 ::selection {
-  color: #fff;
-  background: #664aff;
+  color: var(--white);
+  background: var(--blue);
 }
 
 .wrapper {
@@ -22,11 +32,11 @@ body {
 }
 
 .wrapper .search-input {
-  background: #fff;
+  background: var(--white);
   width: 100%;
   border-radius: 1.875rem 1.875rem 1.6rem 1.6rem;
   position: relative;
-  box-shadow: 0 0.063rem 0.313rem 0.188rem rgba(0, 0, 0, 0.12);
+  box-shadow: 0 0.063rem 0.313rem 0.188rem var(--shadow-1);
 }
 
 .search-input input {
@@ -37,7 +47,7 @@ body {
   border-radius: 4.375rem !important;
   padding: 0 3.75rem 0 2.7rem;
   font-size: 1rem;
-  box-shadow: 0 0.063rem 0.313rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.063rem 0.313rem var(--shadow-2);
 }
 
 .search-input.active input {
@@ -71,7 +81,7 @@ body {
   display: block;
 }
 .autocom-box li:hover {
-  background: #efefef;
+  background: var(--grey);
 }
 
 .search-input .icon {
@@ -83,7 +93,7 @@ body {
   text-align: center;
   line-height: 3.438rem;
   font-size: 1.3rem;
-  fill: rgb(168, 168, 168);
+  fill: var(--deepgray);
   cursor: pointer;
 }
 .search-input .delete {
@@ -95,6 +105,6 @@ body {
   text-align: center;
   line-height: 3.438rem;
   font-size: 1.3rem;
-  fill: rgb(168, 168, 168);
+  fill: var(--deepgray);
   cursor: pointer;
 }
